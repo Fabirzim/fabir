@@ -13,14 +13,3 @@ if(media>9){
 console.log(media)
 console.log(conceito)
 
-switch(conceito){
-    case "otimo":
-        console.log('esta bem')
-        break;
-        case "bom":
-            console.log('esta')
-            break;
-            case "ruim":
-                console.log('estta mal')
-                break;
-}
