@@ -44,19 +44,23 @@
 
     <section>
         <article>
+            <form>
             <label for="nome"></label>
             <input type="text" name="nome" id="nome" placeholder="inicio">
+            </form>
         </article>
     </section>
 
     <section>
         <article>
+            <form>
             <label for="nome"></label>
             <select name="nome">
                 <option>ok</option>
                 <option>ok</option>
                 <option>ok</option>
             </select>
+            </form>
         </article>
     </section>
 
@@ -74,6 +78,18 @@
 
 
 </main>
+
+<mat-form-field>
+    <mat-label></mat-label>
+    <input id="sol" type="text" matInput placeholder="iniicio">
+    <mat-hint matSuffix>{{sol.value.length}}/{{sol.maxLength}}</mat-hint>
+</mat-form-field>
+
+<mat-form-field>
+    <mat-label></mat-label>
+    <input type="text" matInput [(ngMolde)]="sole">
+    <button *ngIf="sole" type="button" mat-icon-button (click)="this.nome=$event.target.sole"></button>
+</mat-form-field>
 
 
 
