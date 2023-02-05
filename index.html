@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<style>
+    #square {
+    width:500px;
+    height:500px;
+    background-color: red;
+    display:none
+}
+</style>
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +23,125 @@
 
 
 
+<nav>
+    <ul>
+        <li></li>
+    </ul>
+</nav>
+
+<header>
+    <p></p>
+</header>
+
+<main>
+
+    <section>
+        <article>
+            <h2></h2>
+            <p></p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <label for="nome"></label>
+            <input type="text" name="nome" id="nome" placeholder="inicio">
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <label for="nome"></label>
+            <select name="nome">
+                <option>ok</option>
+                <option>ok</option>
+                <option>ok</option>
+            </select>
+        </article>
+    </section>
+
+    <aside>
+        <ul>
+            <li></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p></p>
+    </footer>
 
 
-    <h1 id="nome"></h1>
-<input type="text" onchange="mudar(this)">
+
+
+</main>
+
+
+
+
+
+
+<h1 onclick="c()"></h1>
+
+
+
+
+
+<h1></h1>
+<input type="submit" name="nome" onclick="muda()" placeholder="inicio">
+<input type="submit" name="nome" onclick="muda()" placeholder="fim">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav>
+    <main>
+        <article>
+            <div>
+                <h2>
+                    <article>
+                        <p></p>
+                    </article>
+                </h2>
+            </div>
+            <a></a>
+        </article>
+
+        <div>
+            <article>
+                <form>
+                    <label for="nome"></label>
+                    <input type="text" name="nome" id="nome">
+                </form>
+            </article>
+        </div>
+    </main>
+</nav>
+
+
+
+
+
+
+
+
+
+<h1></h1>
+<input type="submit" onclick="muda()" placeholder="inicio">
+<input type="submit" onclick="parar()" placeholder="fim">
+
+
+
+<button id="button">Botao</button>
+
 
 
 
@@ -27,7 +152,7 @@
     <input type="text" value="nome" onclick="converter()">
 </form>
 
-
+<div id="square"></div>
 
 
 <h1 id="resultado"></h1>
@@ -63,7 +188,7 @@
         </div>
     </div>
 
-
+   
     <script src="script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

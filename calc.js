@@ -1,4 +1,4 @@
-let calc={
+let cacl={
     soma:(y,x)=>{
         return y + x
     },
@@ -7,4 +7,4 @@ let calc={
     }
 }
 
-module.exports = calc;
+module.exports=calc

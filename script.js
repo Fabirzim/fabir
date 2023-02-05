@@ -1,15 +1,20 @@
-var nota1=9
-var nota2=4
-var media=(nota1+nota2)/2
-var conceito=""
-if(media>9){
-    conceito="otimo"
-}else if(media>3){
-    conceito="bom"
-}else{
-    conceito="ruim"
+function criarAluno(nome,n1,n2){
+    return{
+        nome:nome,
+        nota1:n1,
+        nota2:n2,
+        media:function(){
+            return(this.nota1+this.nota2)/2
+        }
+    }
 }
 
-console.log(media)
-console.log(conceito)
+let turma=[
+    criarAluno('nome',2,3),
+    criarAluno('jose',3,1)
+]
 
+let aluno=turma[0]
+for(let aluno of turma){
+    console.log(aluno.nome+aluno.media())
+}
